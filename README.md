@@ -1,2 +1,3 @@
 # chart.github.io
-Currency chart. SVG + JS
+
+Currency chart. JS, HTML, SVG, CSS

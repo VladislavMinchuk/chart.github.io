@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>svg</title>
+	<script src="dist/script.js" defer></script>
+	<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+	<div class="main-container">
+		<h1>Currency Chart</h1>
+		<h2>Base currency - EUR</h2>
+		<select id="currency-select">
+			<option disabled selected>Select currency</option>
+		</select>
+		<h2 id="base-currency"></h2>
+		<div class="chart-wrapp">
+			<svg id="chart" width="600" height="200" viewBox="0 0 600 200"></svg>
+			<div class="point"><span>150</span></div>
+			<div class="point"><span>100</span></div>
+			<div class="point"><span>50</span></div>
+		</div>
+		<ul id="date-list"></ul>
+		<ul id="currency-list"></ul>
+	</div>
+</body>
+</html>
