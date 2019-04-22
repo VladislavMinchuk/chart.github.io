@@ -146,3 +146,55 @@ ul li {
 .delete-btn:hover:after {
 	background-color: #db4646;
 }
+
+.loader-wrapper.loaded .preloader {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	transition: opacity 0.2s, visability 0.2s;
+	z-index: 2;
+}
+
+.preloader div {
+	position: absolute;
+	left: calc(50% - 25px);
+	top: calc(50% - 25px);
+	width: 50px;
+	height: 50px;
+	background-color: rgb(70, 185, 219);
+	animation: role 2s infinite;
+}
+
+@keyframes role {
+	0% {
+		transform: translateY(0px);
+		background-color: rgb(70, 185, 219);
+		box-shadow: 0 0 10px 4px rgba(70, 185, 219, 0.5)
+	}
+
+	50% {
+		transform: translateY(-50px);
+		background-color: rgb(35, 223, 129);
+		box-shadow: 0 0 10px 8px rgba(35, 223, 129, 0.5);
+	}
+	51% {
+		transform: translateY(-50px) rotate(90deg);
+	}
+	70% {
+		transform: translateY(-50px);
+	}
+	
+	100% {
+		transform: translateY(0px);
+		background-color: rgb(70, 185, 219);
+		box-shadow: 0 0 10px 4px rgba(70, 185, 219, 0.5);
+	}
+}
